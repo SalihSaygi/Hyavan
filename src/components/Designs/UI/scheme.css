@@ -1,0 +1,67 @@
+.emerald {
+  background-color: #25a18e;
+  color: #9fffcb;
+  border: 1px solid #7ae582;
+}
+
+.strawberry {
+}
+
+.navy {
+}
+
+.burgundy {
+}
+
+.dark {
+}
+
+.default {
+}
+
+/* EMERALD */
+
+/* 
+light green: #7AE582 
+dark green: #25A18E
+bright green: #9FFFCB
+aqua: #00A5CF
+dark-aqua: #004E64
+*/
+
+/* STRAWBERRY */
+
+/* 
+red: #C23C3C
+black(background): #17181A 
+grey-blue: #5E6C7A
+white(text): #DDDDDD
+dark-grey: #CDCDCD %6 and %16
+green(success): #48BD45
+light-grey: #939BA4 */
+
+/* NAVY */
+
+/* dark blue: #25257F
+light blue: #8585D5
+white: #D7D7EC
+dark blue: #282861
+blue-ish grey: #8687B0 */
+
+/* BURGUNDY  */
+
+/* 
+dark and strong(background): #3E211E
+dark and unsaturated: #572B33
+strong: #80223A
+light and unsaturated: #8E324E
+burgandy(main color): #A63356
+*/
+
+/* DARK COLORS  */
+
+/* #262627;
+#484a4d;
+#dadce1;
+#474a4d; 
+*/

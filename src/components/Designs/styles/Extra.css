@@ -1,0 +1,22 @@
+/* .extras {
+
+} */
+
+.extra1 .extra2 {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.extra1 .extra2 img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+}
+.extra1 .extra2 h2 {
+  width: 40%;
+  color: white;
+  font-weight: 200;
+}

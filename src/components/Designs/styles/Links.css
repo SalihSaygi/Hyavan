@@ -1,0 +1,32 @@
+/* .links {
+  overflow: hidden;
+} */
+
+.link {
+  display: flex;
+  margin: 0.5rem 3rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.link h2 {
+  padding: 0rem 2rem;
+  font-weight: bold;
+  color: #658ec6;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.link:active {
+  font-weight: normal;
+}
+
+.link:visited {
+  background-color: #ccc;
+}
+
+.current {
+  border-bottom: 2px solid rgb(80, 185, 233);
+}

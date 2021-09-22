@@ -1,0 +1,17 @@
+.savedPage {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.savedVideos {
+  position: relative;
+  border-radius: 5px;
+  overflow: scroll;
+  width: 10%;
+  height: 10%;
+  scroll-snap-type: y mandatory;
+}
