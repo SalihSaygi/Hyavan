@@ -2,20 +2,22 @@ import mongoose from 'mongoose';
 
 const status = (io, socket, type) => {
   const onlineFriends = {};
+  const blockedUsers = {};
+  const bannedUsers = {};
 
   const userId = socket.handshake.query.id;
 
-  const joinRoom = roomID => {
-    if (users[roomID]) {
-      const length = users[roomID].length;
-      if (length === 4) {
+  const active = () => {
+    if (users[userId]) {
+      if (users.length === 4) {
         socket.emit('room full');
         return;
       }
-      users[roomID].push(socket.id);
+      users[userId].push(socket.id);
     } else {
-      users[roomID] = [socket.id];
+      users[userId] = [socket.id];
     }
+    socket.broadcast.to(onlineFriends);
     socketToRoom[socket.id] = roomID;
     const usersInThisRoom = users[roomID].filter(id => id !== socket.id);
 

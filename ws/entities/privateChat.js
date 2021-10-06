@@ -1,8 +1,8 @@
 //peer to peer (only 2 people)
 
 const privateChat = (socket, type) => {
-  const joinRoom = roomName => {
-    let split = roomName.split('--with--'); // ['username2', 'username1']
+  const joinRoom = () => {
+    let split = socket.handshake.query.roomName.split('--with--'); // ['username2', 'username1']
 
     let unique = [...new Set(split)].sort((a, b) => (a < b ? -1 : 1)); // ['username1', 'username2']
 

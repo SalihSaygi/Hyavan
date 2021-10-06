@@ -1,5 +1,5 @@
 const users = [];
-const rooms = []
+const rooms = [];
 // Join user to chat
 export function userJoin(id, username, room) {
   const user = { id, username, room };
@@ -27,3 +27,5 @@ export function userLeave(id) {
 export function getRoomUsers(room) {
   return users.filter(user => user.room === room);
 }
+
+export function kickBlocked(room, blockedUsers, bannedUsers) {}
