@@ -4,7 +4,7 @@ import announcement from './announcement';
 import rtc from './conference';
 //WebRtc is an object { mediasoupRouter, createTransport, createConsumer, config }
 
-const entities = (socket, WebRtc) => {
+const entities = (socket, WebRtc, router) => {
   announcement(socket);
   groupChat(socket);
   privateChat(socket);

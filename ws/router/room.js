@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
+import { nameGenerator } from './helperFns';
 
 class Room {
   constructor(isPriv = false, roomName) {
@@ -16,7 +17,7 @@ class Room {
   }
 
   get roomName() {
-    return this.roomName;
+    return nameGenerator(this.roomName);
   }
 
   get id() {

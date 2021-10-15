@@ -3,15 +3,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 class Lounge {
   constructor(userId) {
-    this.chatters,
-      this.createdAt,
-      (this.createdBy = userId),
-      (this.host = userId);
+    this.users, this.createdAt, (this.createdBy = userId), (this.host = userId);
     this.id = uuidv4();
   }
 
-  get chatters() {
-    return this.chatters;
+  get users() {
+    return this.users;
   }
 
   get metadata() {

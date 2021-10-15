@@ -1,17 +1,13 @@
-class Chatter {
-  constructor(userId) {
-    (this.sockets = []), this.lastSeen, (this.userId = userId);
+import User from './user.js';
+
+class Chatter extends User {
+  constructor() {
+    (this.subscribedRooms = []), this.lastSeen;
   }
 
-  get sockets() {
-    return this.sockets;
-  }
-
-  get lastSeen() {
-    return this.lastSeen;
-  }
-
-  get userId() {
-    return this.userId;
+  get subscribedRooms() {
+    return this.subscribedRooms;
   }
 }
+
+export default Chatter;

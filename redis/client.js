@@ -1,6 +1,6 @@
 import Redis from 'ioredis';
-import { REDIS_OPTIONS } from '../config/session';
+import { DEV_REDIS_OPTIONS } from '../config/redis';
 
-const client = new Redis(REDIS_OPTIONS);
+const client = new Redis(DEV_REDIS_OPTIONS);
 
 export default client;
